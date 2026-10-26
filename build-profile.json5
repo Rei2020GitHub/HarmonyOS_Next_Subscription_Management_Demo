@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "D:/Project/GitHub/HarmonyOS_Next_Subscription_Management_Demo/keystore.p12",
+          "storePassword": "00000018C404D3C1B95B47A56F617D836D342F3D6B297EA19871C20B9EF0A3345D5C5C52118AF43A",
+          "keyAlias": "alias",
+          "keyPassword": "00000018668F7C0AF9530FC85ED3792907DC01F35C9A1EB1911F48AC377D50ECD0C9922D5CAAE869",
+          "signAlg": "SHA256withECDSA",
+          "profile": "D:/Project/GitHub/HarmonyOS_Next_Subscription_Management_Demo/IAP Demo Debug ProfileDebug.p7b",
+          "certpath": "D:/Project/GitHub/HarmonyOS_Next_Subscription_Management_Demo/Debug.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.1.1(24)",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
